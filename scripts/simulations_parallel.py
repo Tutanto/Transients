@@ -165,10 +165,6 @@ if __name__ == '__main__':
     
     logger.debug(f"End of the simulations")
     
-    # Remove the last element from each sublist (counter value)
-    for sublist in params_list:
-        sublist.pop()
-    
     # Create a DataFrame from the parameter list and save it to a CSV file
     df = pd.DataFrame(params_list, columns=['index', 'amplitude', 't0'])
     df.to_csv(output_dir / 'dataframe.csv', index=False)  # Save the DataFrame to a CSV file
