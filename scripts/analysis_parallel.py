@@ -42,7 +42,7 @@ if __name__ == '__main__':
     irf_path = astri_irf
 
     # Set up logging
-    logger = logging_conf(path_to_logs, f"fit.log")
+    logger = logging_conf(path_to_logs, "fit.log")
     
     # Initialize a list to store significance results
     significance_list = []
